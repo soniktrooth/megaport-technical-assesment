@@ -8,10 +8,17 @@
 .app-inner {
   max-width: 150rem;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .app-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 h1,
