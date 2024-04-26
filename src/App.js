@@ -34,6 +34,8 @@ const App = () => {
   };
 
   const handleSubmit = (event) => {
+    // Add form was submittted.
+    // Set the new data and reset the form.
     event.preventDefault();
     setData([...data, formData]);
     setFormData({
@@ -44,6 +46,7 @@ const App = () => {
     });
   };
 
+  // Work out what data matches the filter input, making sure to match case insensitive.
   const filteredData = data.filter(
     (item) =>
       item.id.toString().toLowerCase().includes(filterText) ||
@@ -52,6 +55,7 @@ const App = () => {
       item.topping.toLowerCase().includes(filterText)
   );
 
+  // Manually sorting is fun.
   const sortedData = sortBy
     ? filteredData.sort((a, b) => {
         if (sortOrder === 'asc') {
