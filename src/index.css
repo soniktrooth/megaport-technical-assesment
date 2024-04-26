@@ -61,3 +61,9 @@ button {
   font-weight: 700;
   cursor: pointer;
 }
+
+button:disabled {
+  background-color: transparent;
+  color: var(--grey);
+  cursor: not-allowed;
+}
