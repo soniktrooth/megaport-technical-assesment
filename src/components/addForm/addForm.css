@@ -1,4 +1,14 @@
 .add-form {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 8rem;
+  border: 1px solid var(--grey);
+  border-radius: 1rem;
+  background: var(--light-blue);
+}
+
+.add-form form {
+  display: flex;
   gap: 2rem;
 }

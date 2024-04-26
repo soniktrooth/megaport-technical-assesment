@@ -7,6 +7,7 @@ export const Table = ({ data, handleSort }) => {
         <tr>
           <th onClick={() => handleSort('id')}>ID</th>
           <th onClick={() => handleSort('type')}>Type</th>
+          <th onClick={() => handleSort('name')}>Name</th>
           <th onClick={() => handleSort('topping')}>Topping</th>
         </tr>
       </thead>
@@ -15,6 +16,7 @@ export const Table = ({ data, handleSort }) => {
           <tr key={index}>
             <td>{item.id}</td>
             <td>{item.type}</td>
+            <td>{item.name}</td>
             <td>{item.topping}</td>
           </tr>
         ))}
