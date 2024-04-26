@@ -1,0 +1,62 @@
+html {
+  font-size: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2rem;
+
+  --dark-blue-grey: #22223c;
+  --blue-grey: #4a4e69;
+  --blue: #364783;
+  --grey: #d6d9df;
+  --light-grey: #c3c7e3;
+  --lightest-grey: #f0f1f9;
+  --dusty-pink: #caada8;
+  --beige: #fcfcfd;
+
+  color: var(--dark-blue-grey);
+}
+
+input {
+  padding: 2rem;
+  font-size: 2rem;
+  border: 1px solid var(--grey);
+  transition: color 0.3s, background 0.3s, border-color 0.3s, opacity 0.3s;
+  border-radius: 1rem;
+}
+
+input:focus,
+input:focus-visible {
+  border-color: var(--blue-grey);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--grey);
+}
+
+label {
+  font-weight: 600;
+}
+
+button {
+  padding: 2rem 3rem;
+  border: 1px solid var(--grey);
+  border-radius: 1rem;
+  background: var(--blue);
+  color: var(--beige);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}

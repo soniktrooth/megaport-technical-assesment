@@ -1,0 +1,26 @@
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Table Header */
+table th {
+  background-color: #e3e5f7;
+  font-weight: bold;
+  padding: 2rem;
+  text-align: left;
+  border-bottom: 2px solid var(--blue-grey);
+}
+
+/* Table Body */
+table td {
+  padding: 2rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+/* Alternating Row Color */
+table tbody tr:nth-child(even) {
+  background-color: var(--lightest-grey);
+}
