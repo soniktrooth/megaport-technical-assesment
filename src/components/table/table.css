@@ -10,6 +10,7 @@ table th {
   padding: 1.2rem;
   text-align: left;
   border-bottom: 2px solid var(--blue-grey);
+  cursor: pointer;
 }
 
 table td {
