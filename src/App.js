@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { AddForm, Filter, PaginatedTable } from './components';
+import { AddForm, Filter, Table } from './components';
 import { deserts } from './data/deserts';
 
 const App = () => {
@@ -72,7 +72,7 @@ const App = () => {
           handleSubmit={handleSubmit}
         />
         <Filter filterText={filterText} handleFilter={handleFilter} />
-        <PaginatedTable data={sortedData} handleSort={handleSort} />
+        <Table data={sortedData} handleSort={handleSort} />
       </div>
     </div>
   );
