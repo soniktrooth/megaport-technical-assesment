@@ -5,7 +5,7 @@ import { deserts } from './data/deserts';
 
 const App = () => {
   const [data, setData] = useState(deserts);
-  const [sortBy, setSortBy] = useState(null);
+  const [sortBy, setSortBy] = useState('id');
   const [sortOrder, setSortOrder] = useState('asc');
   const [filterText, setFilterText] = useState('');
   const [formData, setFormData] = useState({
