@@ -1,5 +1,7 @@
 # Getting Started with The Desert Table
 
+Run `npm install` to install dependancies.
+
 ## Available Scripts
 
 In the project directory, you can run:
